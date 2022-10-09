@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+    font-family: 'Rubik', sans-serif !important;
+
+    nav {
+        background: #7c42da;
+
+        .nav-link {
+            color: white !important;
+        }
+    }
+
+    .danger {
+        background-color: #f6685e;
+    }
+
+    .warning {
+        background-color: #ffc107;
+    }
+
+    .text_danger {
+        color: #f6685e;
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+
+    .text_warning {
+        color: #ffc107;
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+
+    .name_box {
+        position: absolute;
+        background-color: #0c1024;
+        color: white;
+        padding: 3px 20px;
+        box-shadow: 5px 5px 0px #7c42da;
+        right: -10%;
+        border-radius: 6px;
+    }
+
+    .btn {
+        &.green {
+            background-color: #7dc580;
+            padding: 15px 20px;
+            border-radius: 6px !important;
+            font-weight: 600;
+            box-shadow: 5px 5px 0px #222222;
+        }
+    }
+
+    // main content
+
+    main {
+        // hero
+        .hero {
+            height: 88.1vh;
+            overflow: hidden;
+            background-color: #7c42da;
+
+            .first_header_text {
+                font-size: 4.5rem;
+                font-weight: 700;
+                color: white;
+                text-shadow: 5px 5px 0px #222222;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    height: 10px;
+                    top: 50%;
+                    margin-left: 20px;
+                    border-radius: 2px;
+                    box-shadow: 2px 4px 0px #222222;
+                    transform: translateY(-50%);
+                    width: 100px;
+                    background-color: #ffc107;
+                }
+            }
+
+            .second_header_text {
+                font-size: 4.5rem;
+                font-weight: 700;
+                color: white;
+                text-shadow: 5px 5px 0px #222222;
+                position: relative;
+                margin-left: 150px;
+            }
+
+            // svg icon
+
+            .svg-icon {
+                width: 25em;
+                height: 25em;
+                fill: #ffc107 !important;
+                position: absolute;
+                left: -10%;
+                top: 30%;
+                animation: bounce 5s linear infinite;
+            }
+              
+            .svg-icon path,
+            .svg-icon polygon,
+            .svg-icon rect {
+                fill: #ffc107;
+            }
+              
+            .svg-icon circle {
+                // stroke: #ffc107;
+                fill: #ffc107;
+                stroke-width: 2;
+                box-shadow: 2px 4px 0px #222222;
+            }
+
+            .abt_img {
+                position: absolute;
+                right: 20%;
+                top: 33%;
+            }
+
+            .para_text {
+                margin-left: 150px;
+                width: 50%;
+                opacity: 0.7;
+            }
+
+            .btn_block {
+                margin-left: 150px;
+            }
+
+            .wind_svg {
+                width: 15em;
+                position: absolute;
+                right: 10%;
+                bottom: 10%;
+                height: 15em;
+            }
+              
+              .wind_svg path,
+              .wind_svg polygon,
+              .wind_svg rect {
+                fill: #ffc107;
+              }
+              
+              .wind_svg circle {
+                stroke: #ffc107;
+                stroke-width: 1;
+              }
+        }
+
+        .mission {
+            padding: 5rem 0px;
+
+            
+            .abt_img_holder {
+                width: 100%;
+                overflow: hidden;
+                height: 500px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 2px solid #222222;
+                border-radius: 300px !important;
+                
+                img {
+                    margin-top: 250px;
+                }
+            }
+        }
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translate(-10px, 10px);
+    }
+
+    50% {
+        transform: translate(10px, -10px);
+    }
+}

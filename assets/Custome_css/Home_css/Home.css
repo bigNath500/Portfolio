@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  margin: 0%;
+  padding: 0%;
+  overflow-x: hidden;
+  font-family: 'Rubik', sans-serif !important;
+}
+
+body nav {
+  background: #7c42da;
+}
+
+body nav .nav-link {
+  color: white !important;
+}
+
+body .danger {
+  background-color: #f6685e;
+}
+
+body .warning {
+  background-color: #ffc107;
+}
+
+body .text_danger {
+  color: #f6685e;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+body .text_warning {
+  color: #ffc107;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+body .name_box {
+  position: absolute;
+  background-color: #0c1024;
+  color: white;
+  padding: 3px 20px;
+  -webkit-box-shadow: 5px 5px 0px #7c42da;
+          box-shadow: 5px 5px 0px #7c42da;
+  right: -10%;
+  border-radius: 6px;
+}
+
+body .btn.green {
+  background-color: #7dc580;
+  padding: 15px 20px;
+  border-radius: 6px !important;
+  font-weight: 600;
+  -webkit-box-shadow: 5px 5px 0px #222222;
+          box-shadow: 5px 5px 0px #222222;
+}
+
+body main .hero {
+  height: 88.1vh;
+  overflow: hidden;
+  background-color: #7c42da;
+}
+
+body main .hero .first_header_text {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 5px 5px 0px #222222;
+  position: relative;
+}
+
+body main .hero .first_header_text::after {
+  content: '';
+  position: absolute;
+  height: 10px;
+  top: 50%;
+  margin-left: 20px;
+  border-radius: 2px;
+  -webkit-box-shadow: 2px 4px 0px #222222;
+          box-shadow: 2px 4px 0px #222222;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100px;
+  background-color: #ffc107;
+}
+
+body main .hero .second_header_text {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 5px 5px 0px #222222;
+  position: relative;
+  margin-left: 150px;
+}
+
+body main .hero .svg-icon {
+  width: 25em;
+  height: 25em;
+  fill: #ffc107 !important;
+  position: absolute;
+  left: -10%;
+  top: 30%;
+  -webkit-animation: bounce 5s linear infinite;
+          animation: bounce 5s linear infinite;
+}
+
+body main .hero .svg-icon path,
+body main .hero .svg-icon polygon,
+body main .hero .svg-icon rect {
+  fill: #ffc107;
+}
+
+body main .hero .svg-icon circle {
+  fill: #ffc107;
+  stroke-width: 2;
+  -webkit-box-shadow: 2px 4px 0px #222222;
+          box-shadow: 2px 4px 0px #222222;
+}
+
+body main .hero .abt_img {
+  position: absolute;
+  right: 20%;
+  top: 33%;
+}
+
+body main .hero .para_text {
+  margin-left: 150px;
+  width: 50%;
+  opacity: 0.7;
+}
+
+body main .hero .btn_block {
+  margin-left: 150px;
+}
+
+body main .hero .wind_svg {
+  width: 15em;
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  height: 15em;
+}
+
+body main .hero .wind_svg path,
+body main .hero .wind_svg polygon,
+body main .hero .wind_svg rect {
+  fill: #ffc107;
+}
+
+body main .hero .wind_svg circle {
+  stroke: #ffc107;
+  stroke-width: 1;
+}
+
+body main .mission {
+  padding: 5rem 0px;
+}
+
+body main .mission .abt_img_holder {
+  width: 100%;
+  overflow: hidden;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #222222;
+  border-radius: 300px !important;
+}
+
+body main .mission .abt_img_holder img {
+  margin-top: 250px;
+}
+
+@-webkit-keyframes bounce {
+  0%, 100% {
+    -webkit-transform: translate(-10px, 10px);
+            transform: translate(-10px, 10px);
+  }
+  50% {
+    -webkit-transform: translate(10px, -10px);
+            transform: translate(10px, -10px);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    -webkit-transform: translate(-10px, 10px);
+            transform: translate(-10px, 10px);
+  }
+  50% {
+    -webkit-transform: translate(10px, -10px);
+            transform: translate(10px, -10px);
+  }
+}
+/*# sourceMappingURL=Home.css.map */
