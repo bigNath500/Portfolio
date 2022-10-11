@@ -21,8 +21,8 @@
         <!-- header section structuring -->
         <header>
             <!-- navigation bar -->
-            <nav class="navbar-expand-lg navbar navbar-dark p-0" id="navbar">
-                <div class="container border-light border-bottom pb-3 pt-3">
+            <nav class="navbar-expand-lg navbar fixed-top navbar-dark p-0" id="navbar">
+                <div class="container pb-3 pt-3">
                     <a class="navbar-brand fw-bold fs-4" href="#">
                         Nathan<span>iel</span>
                     </a>
@@ -50,126 +50,113 @@
                             </li>
                         </ul>
 
-                        <div class="navbar-nav">
-                            <a href="" class="nav-link"><i class="fas fa-envelope me-1"></i> Contact / email </a>
+                        <div>
+                            <a href="" class="nav-link btn green"><i class="fas fa-download me-2"></i> Resume</a>
                         </div>
                     </div>
                 </div>
             </nav>
         </header>
 
-        <!-- main content container -->
-        <main>
+        <!-- main_content container -->
+        <main class="content_container">
             <!-- hero -->
-            <section class="hero position-relative">
-                <!-- plane svg -->
-                <svg class="svg-icon" viewBox="0 0 20 20">
-                    <path d="M17.218,2.268L2.477,8.388C2.13,8.535,2.164,9.05,2.542,9.134L9.33,10.67l1.535,6.787c0.083,0.377,0.602,0.415,0.745,0.065l6.123-14.74C17.866,2.46,17.539,2.134,17.218,2.268 M3.92,8.641l11.772-4.89L9.535,9.909L3.92,8.641z M11.358,16.078l-1.268-5.613l6.157-6.157L11.358,16.078z"></path>
-                </svg>
+            <section class="hero_content_container">
+                <div class="container position-relative">
+                    <h1>Check and Hire</h1>
 
-                <!-- wind svg -->
-                <svg class="wind_svg" viewBox="0 0 20 20">
-                    <path fill="none" d="M2.568,7.179H8.96c1.411,0,2.557-1.145,2.557-2.557c0-1.412-1.146-2.557-2.557-2.557H8.534c-0.235,0-0.426,0.19-0.426,0.426c0,0.236,0.191,0.426,0.426,0.426H8.96c0.941,0,1.704,0.763,1.704,1.705S9.901,6.327,8.96,6.327H2.568c-0.236,0-0.426,0.19-0.426,0.426C2.142,6.988,2.333,7.179,2.568,7.179 M15.778,7.179c0-0.941-0.763-1.704-1.704-1.704h-0.427c-0.235,0-0.426,0.19-0.426,0.426c0,0.235,0.19,0.426,0.426,0.426h0.427c0.47,0,0.852,0.382,0.852,0.852c0,0.471-0.382,0.853-0.852,0.853H0.864c-0.236,0-0.426,0.19-0.426,0.426c0,0.235,0.19,0.426,0.426,0.426h13.21C15.016,8.884,15.778,8.12,15.778,7.179 M16.631,9.736H2.568c-0.236,0-0.426,0.19-0.426,0.426c0,0.236,0.19,0.426,0.426,0.426h14.062c0.94,0,1.704,0.764,1.704,1.705s-0.764,1.704-1.704,1.704h-0.427c-0.235,0-0.426,0.19-0.426,0.427c0,0.235,0.19,0.426,0.426,0.426h0.427c1.411,0,2.557-1.145,2.557-2.557S18.042,9.736,16.631,9.736 M10.665,11.44H4.273c-0.236,0-0.426,0.19-0.426,0.426c0,0.236,0.19,0.427,0.426,0.427h6.392c1.412,0,2.557,1.145,2.557,2.557s-1.146,2.557-2.557,2.557h-0.426c-0.236,0-0.426,0.19-0.426,0.426s0.19,0.427,0.426,0.427h0.426c1.883,0,3.41-1.526,3.41-3.409S12.548,11.44,10.665,11.44"></path>
-                </svg>
+                    <div class="ms-5">
+                        <h1>Frontend Developer In Nigeria</h1>
 
-                <!-- my img -->
-                <img src="../assets/Images/IMG_1254-removebg.png" class="abt_img" width="250" alt="">
+                        <p class="mt-4">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae tempora quibusdam repellat maxime, modi ipsa voluptatum culpa laboriosam distinctio iusto ab animi unde incidunt provident, quae neque rerum esse suscipit?
+                        </p>
 
-                <div class="container mt-5">
-                    <h1 class="first_header_text ms-5">Check and Hire</h1>
-                    <h1 class="second_header_text">Frontend Developer</h1>
+                        <div class="mt-4">
+                            <a href="" class="btn green text-decoration-none">Contact me!</a>
+                            <a href="" class="btn green text-decoration-none ms-3">View Projects!</a>
+                        </div>
+                    </div>
 
-                    <p class="mt-4 text-light para_text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, sequi autem aperiam pariatur eos molestias doloribus, eligendi dolores quos nobis quae eum distinctio sapiente nesciunt ab tempore quo nam! Voluptatum!
-                    </p>
-
-                    <div class="mt-4 btn_block">
-                        <a href="" class="btn text-decoration-none green">Say Hello <i class="fas fa-angle-right ms-2"></i></a>
-
-                        <a href="" class="btn text-decoration-none green ms-3">View Projects <i class="fas fa-angle-right ms-2"></i></a>
+                    <!-- address icon svg -->
+                    <div class="address_container">
+                        <div class="text-center">
+                            <svg class="svg-icon" viewBox="0 0 20 20">
+                                <path d="M17.388,4.751H2.613c-0.213,0-0.389,0.175-0.389,0.389v9.72c0,0.216,0.175,0.389,0.389,0.389h14.775c0.214,0,0.389-0.173,0.389-0.389v-9.72C17.776,4.926,17.602,4.751,17.388,4.751 M16.448,5.53L10,11.984L3.552,5.53H16.448zM3.002,6.081l3.921,3.925l-3.921,3.925V6.081z M3.56,14.471l3.914-3.916l2.253,2.253c0.153,0.153,0.395,0.153,0.548,0l2.253-2.253l3.913,3.916H3.56z M16.999,13.931l-3.921-3.925l3.921-3.925V13.931z"></path>
+                            </svg>
+    
+                            <div class="info">
+                                <h5 style="line-height: 100% !important;">
+                                    <a href="" class="text-decoration-none text-white">nathanjoe.git@gmail.com</a>
+                                </h5>
+                                <!-- <h5>A19/5 Kuje.</h5> -->
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <!-- service -->
-            <section class="servcie border-dark border-2 border-top border-bottom">
+            <section class="services_content_container">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-4 p-0 border-start border-end border-dark border-2">
-                            <div class="p-5 h-100 d-flex align-items-center justify-content-center">
-                                <h2 class="text-dark fw-bold">
-                                    Make your Projects smooth and easy in one click 
-                                </h2>
+                        <div class="col-md-4">
+                            <div class="service_card green text-dark pt-5 pb-5 p-4">
+                                <h4 class="text-dark fw-bold">Clean Codes</h4>
+
+                                <p class="mt-3">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam temporibus aspernatur aliquam repudiandae quia sint, facilis voluptates consequuntur quam reprehenderit, mollitia, quos officiis. Illo ea eum qui nobis quisquam culpa?
+                                </p>
                             </div>
                         </div>
-                        <div class="col-md-4 p-0">
-                            <div class="p-4 pt-5 pb-5 warning">
-                                <h4 class="fw-bold">Clean Codes</h5>
 
-                                    <p class="mt-3 text-dark">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat veritatis natus molestias, saepe, ipsum laborum temporibus esse deserunt consequatur eaque atque totam iste impedit, vitae laboriosam enim! Error, incidunt alias.
-                                    </p>
+                        <div class="col-md-4">
+                            <div class="service_card warning pt-5 pb-5 p-4 text-dark">
+                                <h4 class="text-dark fw-bold">Responsive Design</h4>
 
-                                    <div class="mt-4">
-                                        <a href="" class="text-decoration-none text_danger">
-                                            Learn more <i class="fas fa-angle-right ms-2"></i>
-                                        </a>
-                                    </div>
+                                <p class="mt-3">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam temporibus aspernatur aliquam repudiandae quia sint, facilis voluptates consequuntur quam reprehenderit, mollitia, quos officiis. Illo ea eum qui nobis quisquam culpa?
+                                </p>
                             </div>
                         </div>
-                        <div class="col-md-4 p-0 border-start border-end border-dark border-2">
-                            <div class="p-4 pt-5 pb-5 danger">
-                                <h4 class="fw-bold">Responsive Design</h5>
 
-                                    <p class="mt-3 text-dark">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat veritatis natus molestias, saepe, ipsum laborum temporibus esse deserunt consequatur eaque atque totam iste impedit, vitae laboriosam enim! Error, incidunt alias.
-                                    </p>
+                        <div class="col-md-4">
+                            <div class="service_card danger pt-5 pb-5 p-4 text-white">
+                                <h4 class="text-white fw-bold">Clean UI/UX</h4>
 
-                                    <div class="mt-4">
-                                        <a href="" class="text-decoration-none text_warning">
-                                            Learn more <i class="fas fa-angle-right ms-2"></i>
-                                        </a>
-                                    </div>
+                                <p class="mt-3">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam temporibus aspernatur aliquam repudiandae quia sint, facilis voluptates consequuntur quam reprehenderit, mollitia, quos officiis. Illo ea eum qui nobis quisquam culpa?
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="mission">
+            <!-- about -->
+            <section class="about_content_container">
                 <div class="container">
-                    <h2 class="text-center text-dark fw-bold">
-                        Greater quality, effective responsive design <br> for any and all types of websites
-                    </h2>
-
-                    <div class="row mt-5">
-                        <div class="col-md-4 d-flex justify-content-center align-items-center  position-relative">
-                            <div class="danger abt_img_holder">
-                                <img src="../assets/Images/Bitmap in Untitled-1.png" width="200%" alt="my image">
-                            </div>
-                            
-                            <div class="name_box">
-                                Nathaniel Joseph
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="text-center">
+                                <img src="../assets/Images/img5.png" width="100%" alt="svg developer img">
                             </div>
                         </div>
-
                         <div class="col-md-6">
-                            <div class="h-100 d-flex align-items-center">
+                            <div class="d-flex h-100 align-items-center">
                                 <div class="ps-5">
-                                    <h6 class="text-muted">
-                                        About me
-                                    </h6>
+                                    <h5 class="text-muted">About me</h5>
 
-                                    <h2 class="text-dark fw-bold">
-                                        In such a developing world, <br> I maintain my workforce requirement.
-                                    </h2>
+                                    <h2 class="fw-bold">Our Working Process To Help Boost Your Business</h1>
 
-                                    <p class="mt-4 text-muted">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum ab incidunt quod nisi labore, eos architecto quisquam, ea quaerat dolores pariatur? Quidem vero perspiciatis culpa aut repudiandae eveniet omnis.
+                                    <p class="mt-3 text-muted">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur fugit reiciendis neque eaque quisquam mollitia, cupiditate commodi maxime exercitationem illo nulla velit, omnis a, ipsa ratione quis assumenda aliquid culpa?
                                     </p>
 
                                     <div class="mt-4">
-                                        <a href="" class="btn text-decoration-none green">Download Resume <i class="fas fa-angle-right ms-2"></i></a>
+                                        <a href="" class="btn green">
+                                            <i class="fas fa-download me-2"></i> Resume
+                                        </a>
                                     </div>
                                 </div>
                             </div>

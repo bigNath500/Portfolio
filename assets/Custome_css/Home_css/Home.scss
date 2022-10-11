@@ -1,187 +1,246 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 body {
     margin: 0%;
     padding: 0%;
     overflow-x: hidden;
-    font-family: 'Rubik', sans-serif !important;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+
+    // navbar
 
     nav {
-        background: #7c42da;
+        background-color: #563AD5;
 
-        .nav-link {
-            color: white !important;
+        .container {
+            border-bottom: 1px solid #eeeeee73;
+
+            .navbar-toggler {
+                background-color: #222222;
+            }
+
+            .collapse {
+                .nav-item {
+                    .nav-link {
+                        color: white !important;
+                        font-weight: 400;
+                    }
+                }
+            }
         }
     }
 
-    .danger {
-        background-color: #f6685e;
-    }
-
-    .warning {
-        background-color: #ffc107;
-    }
-
-    .text_danger {
-        color: #f6685e;
-        font-weight: 600;
-        font-size: 1.3rem;
-    }
-
-    .text_warning {
-        color: #ffc107;
-        font-weight: 600;
-        font-size: 1.3rem;
-    }
-
-    .name_box {
-        position: absolute;
-        background-color: #0c1024;
-        color: white;
-        padding: 3px 20px;
-        box-shadow: 5px 5px 0px #7c42da;
-        right: -10%;
-        border-radius: 6px;
-    }
+    // general btn style
 
     .btn {
+        padding: 10px 20px;
+        box-shadow: 5px 5px 0px #222222;
+        font-weight: 500;
+        font-stretch: expanded;
+
         &.green {
-            background-color: #7dc580;
-            padding: 15px 20px;
-            border-radius: 6px !important;
-            font-weight: 600;
-            box-shadow: 5px 5px 0px #222222;
+            background-color: #00DEA6;
+            color: #222222;
         }
     }
 
-    // main content
+    // hero content 
 
-    main {
-        // hero
-        .hero {
-            height: 88.1vh;
-            overflow: hidden;
-            background-color: #7c42da;
+    .hero_content_container {
+        height: 100vh;
+        overflow: hidden;
+        background-color: #563AD5;
 
-            .first_header_text {
-                font-size: 4.5rem;
-                font-weight: 700;
+        @media screen and (max-width: 1024px) {
+            height: 85vh;
+        }
+
+        @media screen and (max-width: 768px) {
+            height: 100vh;
+        }
+
+        .container {
+            >h1 {
                 color: white;
-                text-shadow: 5px 5px 0px #222222;
+                font-size: 5rem;
+                margin-top: 9rem;
+                font-weight: 800;
+                text-shadow: 3px 5px 0px #222222;
                 position: relative;
+
+                @media screen and (max-width: 1024px) {
+                    font-size: 4.5rem;
+                }
+
+                @media screen and (max-width: 425px) {
+                    font-size: 2rem;
+                }
 
                 &::after {
                     content: '';
                     position: absolute;
                     height: 10px;
-                    top: 50%;
-                    margin-left: 20px;
-                    border-radius: 2px;
-                    box-shadow: 2px 4px 0px #222222;
-                    transform: translateY(-50%);
                     width: 100px;
-                    background-color: #ffc107;
+                    bottom: 15%;
+                    border-radius: 3px;
+                    margin-left: 2%;
+                    background: #FFA500;
+                    box-shadow: 2px 4px 0px #222222;
                 }
             }
 
-            .second_header_text {
-                font-size: 4.5rem;
-                font-weight: 700;
-                color: white;
-                text-shadow: 5px 5px 0px #222222;
-                position: relative;
-                margin-left: 150px;
-            }
+            /* -----
+            SVG Icons - svgicons.sparkk.fr
+            ----- */
 
-            // svg icon
-
-            .svg-icon {
-                width: 25em;
-                height: 25em;
-                fill: #ffc107 !important;
-                position: absolute;
-                left: -10%;
-                top: 30%;
-                animation: bounce 5s linear infinite;
-            }
-              
-            .svg-icon path,
-            .svg-icon polygon,
-            .svg-icon rect {
-                fill: #ffc107;
-            }
-              
-            .svg-icon circle {
-                // stroke: #ffc107;
-                fill: #ffc107;
-                stroke-width: 2;
-                box-shadow: 2px 4px 0px #222222;
-            }
-
-            .abt_img {
+            .address_container {
                 position: absolute;
                 right: 20%;
-                top: 33%;
-            }
-
-            .para_text {
-                margin-left: 150px;
-                width: 50%;
-                opacity: 0.7;
-            }
-
-            .btn_block {
-                margin-left: 150px;
-            }
-
-            .wind_svg {
-                width: 15em;
-                position: absolute;
-                right: 10%;
-                bottom: 10%;
-                height: 15em;
-            }
-              
-              .wind_svg path,
-              .wind_svg polygon,
-              .wind_svg rect {
-                fill: #ffc107;
-              }
-              
-              .wind_svg circle {
-                stroke: #ffc107;
-                stroke-width: 1;
-              }
-        }
-
-        .mission {
-            padding: 5rem 0px;
-
-            
-            .abt_img_holder {
-                width: 100%;
-                overflow: hidden;
-                height: 500px;
+                bottom: -5%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                border: 2px solid #222222;
-                border-radius: 300px !important;
-                
-                img {
-                    margin-top: 250px;
+
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+
+                .svg-icon {
+                    width: 8em;
+                    height: 8em;
+                }
+    
+                .svg-icon path,
+                .svg-icon polygon,
+                .svg-icon rect {
+                    fill: #FFA500;
+                }
+    
+                .svg-icon circle {
+                    stroke: #FFA500;
+                    stroke-width: 1;
+                }
+            }
+
+            .ms-5 {
+                @media screen and (max-width: 768px) {
+                    margin-left: 0% !important;
+                }
+
+                h1 {
+                    color: white;
+                    font-size: 4.3rem;
+                    // margin-top: 50px;
+                    font-weight: 800;
+                    text-shadow: 3px 5px 0px #222222;
+                    position: relative; 
+                    @media screen and (max-width: 1024px) {
+                        font-size: 3.5rem;
+                    }
+
+                    @media screen and (max-width: 425px) {
+                        font-size: 2.4rem !important;
+                    }
+
+                    @media screen and (max-width: 375px) {
+                        font-size: 2rem !important;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        font-size: 3rem;
+                    }
+                }
+
+                p {
+                    width: 50%;
+                    color: white;
+                    font-size: 1.1rem;
+                    opacity: 0.7;
+
+                    @media screen and (max-width: 768px) {
+                        width: 100%;
+                    }
+
+                    @media screen and (max-width: 425px) {
+                        font-size: 1rem;
+                    }
+                }
+
+                .btn {
+                    padding-top: 15px;
+                    padding-bottom: 15px;
                 }
             }
         }
     }
-}
 
-@keyframes bounce {
-    0%, 100% {
-        transform: translate(-10px, 10px);
+    // service_content_container
+
+    .services_content_container {
+        padding: 5rem 0px;
+        .container {
+            .row {
+                @media screen and (max-width: 768px) {
+                    display: grid !important;
+                    grid-template-columns: 1fr 1fr;
+                }
+
+                @media screen and (max-width: 425px) {
+                    display: grid !important;
+                    grid-template-columns: 1fr;
+                    gap: 1rem;
+                }
+
+                .col-md-4 {
+                    @media screen and (max-width: 768px) {
+                        width: 100%;
+
+                        &:nth-child(3) {
+                            margin-top: 20px;
+                        }
+                    }
+
+                    @media screen and (max-width: 425px) {
+                        width: 100%;
+
+                        &:nth-child(3) {
+                            margin-top: 0px;
+                        }
+                    }
+
+                    .service_card {
+                        box-shadow: 5px 5px 0px #222222;
+                        border-radius: 10px;
+
+                        &.green {
+                            background-color: #00DEA6;
+                        }
+
+                        &.warning {
+                            background-color: #FFA500;
+                        }
+
+                        &.danger {
+                            background-color: #FF5369;
+                        }
+                    }
+                }
+            }
+        }
     }
 
-    50% {
-        transform: translate(10px, -10px);
+    // about_content_container
+
+    .about_content_container {
+        padding: 5rem 0px;
+        .container {
+            .row {
+                .col-md-6 {
+                    .ps-5 {
+                        @media screen and (max-width: 768px) {
+                            padding-left: 0% !important;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
