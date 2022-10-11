@@ -7,6 +7,18 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
+body .green {
+  background-color: #00DEA6;
+}
+
+body .warning {
+  background-color: #FFA500;
+}
+
+body .danger {
+  background-color: #FF5369;
+}
+
 body nav {
   background-color: #563AD5;
 }
@@ -22,6 +34,7 @@ body nav .container .navbar-toggler {
 body nav .container .collapse .nav-item .nav-link {
   color: white !important;
   font-weight: 400;
+  z-index: 2;
 }
 
 body .btn {
@@ -30,6 +43,8 @@ body .btn {
           box-shadow: 5px 5px 0px #222222;
   font-weight: 500;
   font-stretch: expanded;
+  z-index: 2;
+  position: relative;
 }
 
 body .btn.green {
@@ -45,7 +60,7 @@ body .hero_content_container {
 
 @media screen and (max-width: 1024px) {
   body .hero_content_container {
-    height: 85vh;
+    height: 100vh;
   }
 }
 
@@ -241,18 +256,6 @@ body .services_content_container .container .row .col-md-4 .service_card {
   border-radius: 10px;
 }
 
-body .services_content_container .container .row .col-md-4 .service_card.green {
-  background-color: #00DEA6;
-}
-
-body .services_content_container .container .row .col-md-4 .service_card.warning {
-  background-color: #FFA500;
-}
-
-body .services_content_container .container .row .col-md-4 .service_card.danger {
-  background-color: #FF5369;
-}
-
 body .about_content_container {
   padding: 5rem 0px;
 }
@@ -261,5 +264,51 @@ body .about_content_container {
   body .about_content_container .container .row .col-md-6 .ps-5 {
     padding-left: 0% !important;
   }
+}
+
+body .project_content_container {
+  padding: 5rem 0px;
+  background-color: #563AD5;
+}
+
+body .project_content_container .container .row .col-md-8 {
+  z-index: 2;
+}
+
+body .project_content_container .container .row .col-md-8 img {
+  border-radius: 10px;
+  z-index: -5;
+}
+
+body .project_content_container .container .row .col-md-8 .blue {
+  border-radius: 10px;
+  padding: 30px;
+  position: absolute;
+  top: 45%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 70%;
+  right: -50%;
+  background-color: #00185B;
+}
+
+body .project_content_container .container .row .col-md-8 .second_detail {
+  left: -50%;
+}
+
+body #cursor {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffa60073;
+  position: absolute;
+  display: none;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+body div:hover ~ #cursor {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
 }
 /*# sourceMappingURL=Home.css.map */
